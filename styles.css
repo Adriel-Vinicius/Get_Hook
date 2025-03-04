@@ -84,64 +84,55 @@ img#logo{
     background-size: contain;
 }
 
-#logo-flutuante {
+.logo-flutuante {
     width: 8vw;
     position: relative;
     border-radius: 100px;
 }
 
-#logo-flutuante:hover {
+.logo-flutuante:hover {
     border: 1px solid white;
     transform: translate(-1px, -1px);
     transition-duration: 0.5s;
     box-shadow: 3px 3px 5px rgb(138, 137, 137);
 }
 
- .olx-logo {
-    left: -140px;
-    top: -10px;
- }
+ .olx-logo {left: -140px; top: -10px;}
+ .uol-logo {left: -250px; top: 70px;}
+ .yahoo-logo {left: -290px; top: 150px;}
+ .metropole-logo {left: -330px; top: 230px;}
 
- .uol-logo {
-    left: -250px;
-    top: 70px;
- }
 
- .yahoo-logo {
-    left: -330px;
-    top: 150px;
- }
+ /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 
- .metropole-logo {
-    left: -330px;
-    top: 150px;
- }
+    h1.titulo {
+        background-color: red;
+    }
+
+
+    .logo-flutuante {
+        width: 8vw;
+        position: relative;
+    }
+    .olx-logo {left: -150px; top: -10px;}
+    .uol-logo {left: -280px; top: 90px;}
+    .yahoo-logo {left: -360px; top: 200px; width: 90px;}
+    .metropole-logo {left: -370px; top: 270px;}
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
     h1.titulo {
+        background-color: #0D6EFD;
         font-size: 3.5em;
     }
 
-    #logo-flutuante {
-        width: 5vw;
-        position: relative;
-    }
-     .olx-logo {
-        left: -300px;
-        top: -10px;
-     }
-
-     .uol-logo {
-        left: -480px;
-        top: 90px;
-     }
-
-     .yahoo-logo {
-        left: -600px;
-        top: 200px;
-        width: 90px;
-     }
-    
+    .logo-flutuante {width: 5vw; position: relative;}
+    .olx-logo {left: -300px; top: -10px;}
+    .uol-logo {left: -480px; top: 90px;}
+    .yahoo-logo {left: -600px; top: 200px; width: 90px;}
+    .metropole-logo {left: -330px; top: 230px;}
 }
