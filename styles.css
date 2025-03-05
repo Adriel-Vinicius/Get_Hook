@@ -11,6 +11,10 @@ a, i {
     text-decoration: none;
 }
 
+.font-color-black {
+    color: #000000;
+}
+
 
 
 .btn {
@@ -18,22 +22,16 @@ a, i {
     color: #ffffff;
     padding: 2px 18px;
 }
-.whatsapp {
-    color: #000000;
+.whatsapp,
+.soluções {
+    width: 204px;
     border-radius: 50px;
     font-weight: bold;
-    background-color: #7bffb0;
-    margin: 20px 10px;
+    margin: 10px 10px;
     padding: 7px 18px;
 }
 
-.soluções {
-    color: #ffffff;
-    border-radius: 50px;
-    font-weight: bold;
-    margin: 20px 10px;
-    padding: 7px 18px;
-}
+.whatsapp {background-color: #7bffb0;color: #000000;}
 
 .btn:hover {
     color: #faeaea;
@@ -54,35 +52,50 @@ img#logo{
 
 /* HOME */
 
-.main-image {
-    height: 800px;
+h1.titulo {
+    margin: auto;
     width: 100%;
+    font-size: 6vw;
+}
+
+.main-image {
+    width: 100%;
+    margin: 0%;
     background-image: url(img/background\ 1.png);
-    margin-bottom: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
+
 .main-image-info {
-    width: 80%;
+    width: 99%;
     padding: 25px;
     margin: auto;  
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .center-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0%;
 }
 
 .img-portais {
     background-image: url(img/alguns\ portais.png);
-    height: 300px;
+    height: 60px;
+    margin: 20px 0px;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: contain;
+    background-position: center;
 }
+
+.h3 {font-weight: bold; font-size: medium;}
 
 .logo-flutuante {
     width: 8vw;
@@ -97,42 +110,164 @@ img#logo{
     box-shadow: 3px 3px 5px rgb(138, 137, 137);
 }
 
- .olx-logo {left: -140px; top: -10px;}
- .uol-logo {left: -250px; top: 70px;}
- .yahoo-logo {left: -290px; top: 150px;}
- .metropole-logo {left: -330px; top: 230px;}
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 0px) and (max-width: 992px) {
+
+
+/* CARDS 1 */
+.card-body{
+    margin: 0%;
+}
+
+.img-fluid {
+    max-width: 200px;
+    display: block;
+    margin: 5px 0px 0px;
+}
+
+img.img-fluid {
+    width: 200px;
+    margin: auto;
+}
+
+.btn-seção-card-1 {
+    margin: 10px 0px 5px;
+}
+
+.container-seção-1 {
+    height: 100px;
+}
+
+.custom-card { 
+    
+    background-color: #377DFF;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0px;
+}
+
+#card-secundario{
+    margin: 10px;
+}
+
+.card-body p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 0%;
+}
+
+strong {
+    color: #ffffff;
+}
+
+#card-1{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-2 {
+    padding: 0%;
+}
+
+#card-3 {
+    padding: 15px;
+}
+
+
+  
+
+ .olx-logo {left: -140px; top: -10px; display: none;}
+ .uol-logo {left: -250px; top: 70px; display: none;}
+ .yahoo-logo {left: -290px; top: 150px; display: none;}
+ .metropole-logo {left: -330px; top: 230px; display: none;}
+
+ .g-logo{left: 150px; top: -10px; display: none;}
+ .terra-logo{left: 150px; top: -10px; display: none;}
+ .r7-logo{left: 150px; top: -10px; display: none;}
+ .yt-logo{left: 150px; top: -10px; display: none;}
+
+ }
 
 
  /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+    .img-portais {
+        background-image: url(img/alguns\ portais.png);
+        height: 20vw;
+        margin: 20px 0px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
     h1.titulo {
-        background-color: red;
+    background-color: rgba(243, 101, 101, 0);
+    margin: auto;
+    margin: 80px 0px 0px;
+    width: 100%;
+    font-size: 6vw;
+    }
+    
+    .container-btn {
+        display: flex;
     }
 
-
-    .logo-flutuante {
-        width: 8vw;
-        position: relative;
+    .h3 {
+        margin: 30px 0px;
+        font-size: 1.6em;
     }
-    .olx-logo {left: -150px; top: -10px;}
-    .uol-logo {left: -280px; top: 90px;}
-    .yahoo-logo {left: -360px; top: 200px; width: 90px;}
-    .metropole-logo {left: -370px; top: 270px;}
 
-}
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
     h1.titulo {
-        background-color: #0D6EFD;
-        font-size: 3.5em;
+        background-color: #47679700;
+        font-size: 3em;
+        width: 80vw;
     }
 
-    .logo-flutuante {width: 5vw; position: relative;}
-    .olx-logo {left: -300px; top: -10px;}
-    .uol-logo {left: -480px; top: 90px;}
-    .yahoo-logo {left: -600px; top: 200px; width: 90px;}
-    .metropole-logo {left: -330px; top: 230px;}
+    .logo-flutuante {width: 70px; position: relative;}
+
+    .olx-logo {left: -100px; top: 80px;}
+    .uol-logo {left: -240px; top: 190px;}
+    .yahoo-logo {left: -330px; top: 300px; width: 70px;}
+    .metropole-logo {left: -310px; top: 370px;}
+
+    .g-logo{left: 260px; top: 60px;}
+    .terra-logo{left: 300px; top: 170px;}
+    .r7-logo{left: 230px; top: 290px;}
+    .yt-logo{left: 40px; top: 350px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    h1.titulo {
+        background-color: #8da11f00;
+        font-size: 3.3em;
+        width: 80vw;
+    }
+
+    .main-image {height: 950px;}
+
+    .logo-flutuante {width: 80px;}
+
+    .olx-logo {left: 0px; top: 40px;}
+    .uol-logo {left: -280px; top: 190px; width: 75px;}
+    .yahoo-logo {left: -400px; top: 300px; width: 90px;}
+    .metropole-logo {left: -310px; top: 370px; width: 60px;}
+
+    .g-logo{left: 260px; top: 60px;  width: 90px;}
+    .terra-logo{left: 370px; top: 170px;}
+    .r7-logo{left: 260px; top: 290px;}
+    .yt-logo{left: 100px; top: 380px;  width: 60px;}
 }
