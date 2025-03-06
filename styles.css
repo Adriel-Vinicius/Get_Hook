@@ -111,10 +111,6 @@ h1.titulo {
 }
 
 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 0px) and (max-width: 992px) {
-
-
 /* CARDS 1 */
 .card-body{
     margin: 0%;
@@ -177,10 +173,15 @@ strong {
 
 #card-3 {
     padding: 15px;
-}
+} 
 
 
   
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 0px) and (max-width: 992px) {
+
+
 
  .olx-logo {left: -140px; top: -10px; display: none;}
  .uol-logo {left: -250px; top: 70px; display: none;}
@@ -195,8 +196,11 @@ strong {
  }
 
 
+
+
  /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
 
     .img-portais {
         background-image: url(img/alguns\ portais.png);
@@ -208,7 +212,7 @@ strong {
     }
 
     h1.titulo {
-    background-color: rgba(243, 101, 101, 0);
+    background-color: rgb(199, 49, 49);
     margin: auto;
     margin: 80px 0px 0px;
     width: 100%;
@@ -223,6 +227,7 @@ strong {
         margin: 30px 0px;
         font-size: 1.6em;
     }
+
 
 } 
 
