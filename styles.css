@@ -112,52 +112,35 @@ h1.titulo {
 
 
 /* CARDS 1 */
-.card-body{
-    margin: 0%;
-}
 
-.img-fluid {
-    max-width: 200px;
-    display: block;
-    margin: 5px 0px 0px;
-}
-
-img.img-fluid {
-    width: 200px;
-    margin: auto;
-}
-
-.btn-seção-card-1 {
-    margin: 10px 0px 5px;
-}
-
-.container-seção-1 {
-    height: 100px;
-}
-
-.custom-card { 
-    
-    background-color: #377DFF;
-    border-radius: 10px;
-    border: none;
-    margin: 20px 0px;
-}
-
-#card-secundario{
-    margin: 10px;
+.titulo-secao-cards {
+    text-align: center;
+    font-size: 2.5em;
 }
 
 .card-body p {
     font-size: 22px;
     font-weight: bold;
     color: #ffffff;
-    padding: 15px 0px;
+    padding: 5px 0px;
     text-align: center;
-    margin: 0%;
 }
 
 strong {
     color: #ffffff;
+}
+
+.titulo-secao-cards {
+    text-align: center;
+}
+
+.custom-card { 
+    
+    background-color: #377DFF;
+    border-radius: 40px;
+    border: none;
+    margin: 20px 0px;
+    padding: 20px;
 }
 
 #card-1{
@@ -167,36 +150,67 @@ strong {
     align-items: center;
 }
 
-#card-2 {
-    padding: 0%;
-}
 
-#card-3 {
-    padding: 15px;
-} 
-
-
-  
 
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 0px) and (max-width: 992px) {
 
+    h1.titulo {background-color: rgba(199, 49, 49, 0);}
 
+    .olx-logo {left: -140px; top: -10px; display: none;}
+    .uol-logo {left: -250px; top: 70px; display: none;}
+    .yahoo-logo {left: -290px; top: 150px; display: none;}
+    .metropole-logo {left: -330px; top: 230px; display: none;}
 
- .olx-logo {left: -140px; top: -10px; display: none;}
- .uol-logo {left: -250px; top: 70px; display: none;}
- .yahoo-logo {left: -290px; top: 150px; display: none;}
- .metropole-logo {left: -330px; top: 230px; display: none;}
+    .g-logo{left: 150px; top: -10px; display: none;}
+    .terra-logo{left: 150px; top: -10px; display: none;}
+    .r7-logo{left: 150px; top: -10px; display: none;}
+    .yt-logo{left: 150px; top: -10px; display: none;}
 
- .g-logo{left: 150px; top: -10px; display: none;}
- .terra-logo{left: 150px; top: -10px; display: none;}
- .r7-logo{left: 150px; top: -10px; display: none;}
- .yt-logo{left: 150px; top: -10px; display: none;}
+    /* CARDS 1*/
+
+    .col-md-6 {
+        width: 90%;
+    }
+
+    #card-1, #card-2, #card-3 {
+        width: 100%;
+        margin: auto;
+    }
+
+    #card-2, #card-3 { 
+        margin-top: 40px;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .custom-card { 
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    img.wwp {
+        width: 100px; 
+        height: 70%;
+        margin: 20px;
+    }
+
+    .card-img-top {
+        width: 90%;
+        margin-bottom: 10%;
+    }
 
  }
-
-
-
 
  /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -212,7 +226,6 @@ strong {
     }
 
     h1.titulo {
-    background-color: rgb(199, 49, 49);
     margin: auto;
     margin: 80px 0px 0px;
     width: 100%;
@@ -251,6 +264,66 @@ strong {
     .terra-logo{left: 300px; top: 170px;}
     .r7-logo{left: 230px; top: 290px;}
     .yt-logo{left: 40px; top: 350px;}
+
+    /* CARD */
+
+    .card-body p {
+        text-align: left;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .titulo-secao-cards {
+        text-align: left;
+        font-size: 2.5em;
+    }
+
+    .container-main {
+        margin: auto;
+        height: 500px;
+        width: 960px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .col-md-6 {height: 600px; margin: 0%;}
+
+    img.wwp {
+        width: 100px; 
+        height: 70%;
+        margin: 20px;
+        margin-right: 40px;
+        align-self: flex-end;
+    }
+
+    img.ia {
+        width: 30%; 
+        height: 60%;
+        margin: 0px 20px 20px 0px;
+        align-self: flex-end;
+    }
+
+    .custom-card {
+        padding: 0%;}
+
+    .card-body{
+        display: flex;
+        justify-content: space-between;
+        padding: 0%;
+    }
+
+    .card-img-top {
+        max-width: 90%;
+        margin-top: 30px;
+    }
+
+    #card-1{height: 92%;}
+
+    #card-2 {margin-bottom: 0px;height: 45%; margin-left: 60px;}
+    
+    #card-3 {margin-top: 0px;height: 45%;
+margin-left: 60px;}
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -275,4 +348,34 @@ strong {
     .terra-logo{left: 370px; top: 170px;}
     .r7-logo{left: 260px; top: 290px;}
     .yt-logo{left: 100px; top: 380px;  width: 60px;}
+
+    /* CARDS */
+
+    .card-body p {
+        font-size: 1.6em;
+    }
+
+
+    .titulo-secao-cards {
+        text-align: left;
+        font-size: 3em;
+    }
+
+    .container-section {
+        margin: auto;
+        height: 700px;
+        width: 100%;
+    }
+
+    .container-main {
+        margin: auto;
+        height: 500px;
+        width: 100%;
+    }
+
+    .card-img-top {
+        max-width: 90%;
+        margin-top: 30px;
+    }
+
 }
