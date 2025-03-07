@@ -155,12 +155,25 @@ strong {
 
 .tab-content {
     background: #f1f1f1;
-    padding: 20px;
+    margin: 60px;
     border-radius: 10px;
 }
 
+.card-solucoes h1, h2, h3 {
+    font-weight: bolder;
+}
+
+.card-solucoes h3 {
+    font-size: 3em;
+}
+
+.card-solucoes p {
+    font-size: 1.7em;
+    padding: 40px 0px;
+}
+
 .logo-section p{
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 20px;
     margin: 10px;
     padding: 0px 20px;
@@ -182,7 +195,7 @@ strong {
 
 .container-text {
     background-color: #E5E5E5;
-    height: 500px;
+    height: 600px;
     border-radius: 40px;
     margin: 0px;
 }
@@ -208,6 +221,8 @@ strong {
 .container-list {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: -30px;
 }
 
 .nav-tabs .nav-link.active {
@@ -216,10 +231,25 @@ strong {
     border-color: #E5E5E5 !important; 
 }
 
-span {
+.nav-link {
+    width: 250px;
+}
+
+
+.card-solucoes span {
     color: #000000;
     font-weight: bolder;
 }
+
+.title-color span {
+    font-size: 2em;
+}
+
+.title-color {
+    font-size: 1.2em;
+}
+
+
 
 .container-section {
     height: 800px;
@@ -231,6 +261,15 @@ span {
     display: flex;
     justify-content: center;
     margin: auto;
+}
+
+.card-solucoes .btn {
+    background-color: #00FFAD;
+    color: #000000;
+    font-weight: bolder;
+    padding: 7px 16px;
+    border-radius: 20px;
+    border: none;
 }
 
 
@@ -309,7 +348,6 @@ span {
     .card-solucoes {
         display: none;
     }
-
  }
 
  /* Medium devices (landscape tablets, 768px and up) */
@@ -439,7 +477,24 @@ span {
     .card-solucoes {
         width: 100%;
     }
-    
+
+    .nav-link {
+        width: 200px;
+    }
+
+    .title-color span {
+        font-size: 1em;
+    }
+
+    .title-color {
+        font-size: 1.2em;
+    }
+
+
+
+     
+
+ 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -544,5 +599,21 @@ span {
     
     #card-3 {margin-top: 0px;height: 45%;
 margin-left: 60px;}
+   
+    .title-color span {
+        font-size: 2em;
+    }
+
+    .title-color {
+        font-size: 1em;
+    }
+
+    .nav-link {
+        width: 240px;
+    }
+
+
+
+ 
 
 }
