@@ -33,7 +33,7 @@ a, i {
 
 .whatsapp {background-color: #7bffb0;color: #000000;}
 
-.btn:hover {
+.container-btn .soluções .btn:hover {
     color: #faeaea;
     background-color: #0D6EFD;
 }
@@ -272,6 +272,83 @@ strong {
     border: none;
 }
 
+/* SEÇÃO 4 TEXTO */
+
+.section-text {
+    margin-top: 60px;
+}
+
+ .section-text h2 {
+    font-weight: 900;
+ }
+
+ .section-text h2, h3, p {
+    text-align: center;
+ }
+
+ .section-text p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+ }
+
+ .section-text .btn{
+    background-color: #377DFF;
+    margin-top: 20px;
+    font-size: 1.4em;
+    padding: 10px 20px;
+ }
+
+ .section-text .btn:hover{
+    color: #c1c2c4;
+ }
+
+ /* FORMULARIO */
+
+ .form {
+    background-color: #011a49;
+    margin-top: 50px;
+ }
+
+ .form input {
+    width: 90%;
+    font-weight: bolder;
+ }
+
+ .form > form > div {
+    margin: 15px;
+ }
+
+ .text-form > h2, h3 {
+    color: #ffffff;
+    text-align: center;
+ }
+
+ .form label {
+    color: #ffffff;
+    text-align: left;margin: 5px 0px;
+ }
+
+ .form .button-form {
+    border: none;
+    border-radius: 5px;
+    background-color: #377DFF;
+    margin-top: 20px;
+    margin: auto;
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #ffffff;
+ }
+
+ .form > form {
+    background-color: #333333;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
 
 
  /* Medium devices (landscape tablets, 768px and up) */
@@ -295,10 +372,8 @@ strong {
         font-size: 1.1em;
     }
 
-
-
     .col-md-6 {
-        width: 90%;
+        width: 80%;
     }
 
     #card-1, #card-2, #card-3 {
@@ -306,7 +381,7 @@ strong {
         margin: auto;
     }
 
-    #card-2, #card-3 { 
+    #card-1, #card-2, #card-3 { 
         margin-top: 40px;
     }
 
@@ -314,6 +389,8 @@ strong {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0%;
+        margin: 0%;
     }
 
     .card-body {
@@ -345,9 +422,97 @@ strong {
     }
 
     /* NAVEGAÇÃO */
-    .card-solucoes {
-        display: none;
+
+    .alinhar-itens .container-section {height: 1400px;}
+
+    .card-solucoes h3 {font-size: 1em;}
+    
+    .card-solucoes p {font-size: 16px; padding: 40px 0px;}
+    
+    .logo-section p{
+        border: 4px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 0px 20px;
+        font-weight: bold;
+        font-size: 22px;
+        display: inline-block;
     }
+    
+    .card-solucoes h2 {margin: 10px; width: 80%;}
+    
+    .tab-content {
+        background-color: #e5e5e5;
+        height: 80%;
+        width: 80%;
+    }
+    
+    .nav-link {
+        width: 250px;
+    }
+    
+    .title-color span {font-size: 10px;}
+    
+    .title-color {font-size: 1.2em;}
+    
+    .container-section {height: 800px;}
+    
+    .alinhar-itens {width: 90%;}
+    
+    .card-solucoes .btn {
+        background-color: #00FFAD;
+        color: #000000;
+        font-weight: bolder;
+        padding: 7px 16px;
+        border-radius: 20px;
+        border: none;
+    }
+
+    /* SEÇÃO 4 TEXTO */
+
+    .section-text > h2, h3, p {
+        margin: 10px 0px;
+        color: #000000;
+    }
+
+    .section-text > p {
+        font-size: 16px;
+    }
+
+    .section-text .btn{
+        background-color: #377DFF;
+        margin-top: 20px;
+        font-size: 1.4em;
+        padding: 10px 20px;
+     }
+
+    /* FORMULARIO */
+
+    .text-form > h2, h3 {
+        margin: 10px 0px;
+    }
+
+    .color-text-form {
+        color: #ffffff;
+        font-weight: lighter;
+    }
+
+    .form > form {
+        width: 90%;
+        margin-top: 30px;
+     }
+
+     .form .button-form {
+        width: 200px;
+     }
+
+     .form form > div {
+        width: 90%;
+     }
+
+     .form input {
+        width: 100%;
+     }
  }
 
  /* Medium devices (landscape tablets, 768px and up) */
@@ -379,8 +544,13 @@ strong {
         font-size: 1.6em;
     }
 
+    /* FORMULARIO */
 
-} 
+    .form > form {
+        width: 600px;
+        margin-top: 30px;
+     }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -490,11 +660,11 @@ strong {
         font-size: 1.2em;
     }
 
+    /* SEÇÃO 4 TEXTO */
+
+    
 
 
-     
-
- 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -612,8 +782,6 @@ margin-left: 60px;}
         width: 240px;
     }
 
-
-
- 
+    /* SEÇÃO 4 TEXTO */
 
 }
