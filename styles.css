@@ -15,8 +15,6 @@ a, i {
     color: #000000;
 }
 
-
-
 .btn {
     text-decoration: none;
     color: #ffffff;
@@ -94,8 +92,6 @@ h1.titulo {
     background-size: contain;
     background-position: center;
 }
-
-.h3 {font-weight: bold; font-size: medium;}
 
 .logo-flutuante {
     width: 8vw;
@@ -319,11 +315,6 @@ strong {
     margin: 15px;
  }
 
- .text-form > h2, h3 {
-    color: #ffffff;
-    text-align: center;
- }
-
  .form label {
     color: #ffffff;
     text-align: left;margin: 5px 0px;
@@ -347,6 +338,19 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
+ }
+
+ /* FOOTER */
+
+ footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+ }
+
+ #p-footer {
+    margin: 0%;
  }
 
 
@@ -488,13 +492,19 @@ strong {
 
     /* FORMULARIO */
 
+    .form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .text-form > h2, h3 {
         margin: 10px 0px;
     }
 
-    .color-text-form {
+    #color-text-form {
         color: #ffffff;
-        font-weight: lighter;
+        text-align: center;
     }
 
     .form > form {
@@ -658,13 +668,46 @@ strong {
 
     .title-color {
         font-size: 1.2em;
+        color: #000000;
     }
 
-    /* SEÇÃO 4 TEXTO */
+    /* FORMULARIO */
 
+    .form {
+        background-color: #011a49;
+        margin-top: 50px;
+        height: 700px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+     }
+
+     .form input {
+        width: 100%;
+        font-weight: bolder;
+     }
     
+     .form > form > div {
+        width: 90%;
+     }
 
+     .form .button-form {
+        margin: auto;
+        width: 70%;
+     }
+    
+     .form > form {
+        width: 500px;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
 
+     #color-text-form {
+        color: #ffffff;
+        text-align: center;
+     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -783,5 +826,16 @@ margin-left: 60px;}
     }
 
     /* SEÇÃO 4 TEXTO */
+
+    /* FORMULARIO */
+
+    .text-form > h2, h3 {
+        font-size: 3em;
+     }
+
+     .form > form {
+        width: 600px;
+        font-size: 1.5em;
+     }
 
 }
