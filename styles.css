@@ -584,8 +584,6 @@ strong {
 
     /* CARD */
 
-   
-    
     .titulo-secao-cards {
         text-align: left;
         font-size: 2.5em;
@@ -604,8 +602,6 @@ strong {
         display: flex;
         justify-content: space-between;
     }
-
-    
 
     .col-md-6 {height: 600px; margin: 0%;}
 
@@ -637,9 +633,6 @@ strong {
         padding: 0%;
     }
 
-    
-
-
     .card-img-top {
         max-width: 90%;
         margin-top: 30px;
@@ -651,8 +644,15 @@ strong {
     
     #card-3 {margin-top: 0px; height: 45%; margin-left: 60px;}
 
+    /* NAVEGAÇÃO */
 
-    /* SOLUÇOES -----------------------------------*/
+    .container-text {
+        width: 100%;
+    }
+
+    .tab-pane > h3 {
+        text-align: left;
+    }
 
     .card-solucoes {
         width: 100%;
@@ -727,8 +727,6 @@ strong {
         background-position: center;
     }
 
-    
-
     .main-image {height: 950px;}
 
     .logo-flutuante {width: 80px;}
@@ -759,12 +757,10 @@ strong {
         align-items: flex-end;
     }
 
-
     .titulo-secao-cards {
         text-align: left;
         font-size: 3em;
     }
-
 
     .container-main {
         margin: auto;
@@ -810,8 +806,11 @@ strong {
 
     #card-2 {margin-bottom: 0px;height: 45%; margin-left: 60px;}
     
-    #card-3 {margin-top: 0px;height: 45%;
-margin-left: 60px;}
+    #card-3 {
+        margin-top: 0px;
+        height: 45%;
+        margin-left: 60px;
+    }
    
     .title-color span {
         font-size: 2em;
@@ -825,8 +824,12 @@ margin-left: 60px;}
         width: 240px;
     }
 
-    /* SEÇÃO 4 TEXTO */
+    /* NAVEGAÇÃO */
 
+    .container-text {
+        width: 100%;
+    }
+    
     /* FORMULARIO */
 
     .text-form > h2, h3 {
@@ -837,5 +840,4 @@ margin-left: 60px;}
         width: 600px;
         font-size: 1.5em;
      }
-
 }
